@@ -12,9 +12,6 @@ language_tabs: # must be one of https://git.io/vQNgJ
   - go: Go
  
 toc_footers:
-  - <a href='https://www.tsheets.com/'>TSheets Free Trial Signup</a>
-  - <a href='https://developers.tsheets.com/docs/api/'>Classic REST API Docs</a>
-  - <a href='https://www.tsheets.com/partners'>Partnership Program</a>  
 
 includes:
   - Overview/welcome.md.erb
