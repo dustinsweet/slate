@@ -1,12 +1,14 @@
  > **Example**: <%= description %>
+ 
 <% if defined?(request_body) -%>
  > Request Body
 
 ```json
 <%= request_body -%>
-```
 
+```
 <% end %>
+
  > Request
 
 ```shell
@@ -152,5 +154,6 @@ func main() {
 
 ```json
 <%= response_body %>
+
 ```
 <% end %>
