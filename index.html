@@ -692,23 +692,20 @@
               </ul>
           </li>
       </ul>
-        <ul class="toc-footer">
-            <li><a href='https://www.tsheets.com/'>TSheets Free Trial Signup</a></li>
-            <li><a href='https://developers.tsheets.com/docs/api/'>Classic REST API Docs</a></li>
-            <li><a href='https://www.tsheets.com/partners'>Partnership Program</a></li>
-        </ul>
     </div>
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
         <h1 id='welcome'>Welcome</h1>
-<p>Thank you for visiting the TSheets API Documentation Portal!  We hope you&#39;ll easily find everything you need. If not, please let us know and we&#39;ll make it right.  Whether you&#39;re running into a problem, have feedback or a great suggestion, or would just like to talk through integration scenarios, we&#39;d <a href="mailto:help@tsheets.com">love to hear from you</a>.</p>
+<p>Thank you for visiting the TSheets API Documentation Portal!  We hope you&#39;ll easily find everything you need. If not, please let us know and we&#39;ll make it right.  Whether you&#39;re running into a problem, have feedback or a great suggestion, or would just like to talk through integration scenarios, we&#39;d <a href="mailto:SBSEGTimeTrackingSegment-Partnerships@intuit.com">love to hear from you</a>.</p>
 <h2 id='introduction'>Introduction</h2>
 <p>The TSheets API provides programmatic access to the same time tracking, managing, scheduling and reporting features as our top-rated web-based and mobile apps.  With it you can quickly build integrations, for example to automatically sync employee time tracking data for payroll and invoicing. Or, create new scheduling or project management solutions.  The options are unlimited.  For inspiration, check out the amazing integrations our partners have built on our <a href="https://www.tsheets.com/app-marketplace">App Marketplace</a>.  They&#39;re solving real business needs and saving customers time and money.</p>
 
 <p>Based on <a href="https://en.wikipedia.org/wiki/Representational_state_transfer">REST</a> principles, it&#39;s very easy to write and test applications. You can use your browser to access URLs, and practically any TLS-capable HTTP client in any programming language to interact with the API. The API allows you to query metadata about your account, users, jobcodes, timesheets, GPS points, and custom fields. You can also create timesheets, users, jobcodes, etc.  All access to the API occurs over a TLS-encrypted secure channel, so your API client must support TLS. To ensure data privacy, unencrypted HTTP is not supported.</p>
 <h2 id='getting-started'>Getting Started</h2>
-<p><img src="images/getting_started.png" class="getting-started"/></p>
+<p><a href="https://www.tsheets.com"><img src="images/getting_started-1.png" alt="getting_started-1" style="float:left; width:32%; margin-right: 1%"/></a><a href="#obtaining-an-api-access-token"><img src="images/getting_started-2.png" alt="getting_started-1" style="float:left; width:32%; margin-right: 1%"/></a><a href="#postman-collection"><img src="images/getting_started-3.png" alt="getting_started-1" style="float:left; width:32%; margin-right: 1%"/></a></p>
+
+<p><p style="clear: both;"></p>
 
 <p><strong>1) Signup for a Free Trial</strong><br/>
 Visit <a href="https://www.tsheets.com">https://www.tsheets.com</a> today and get started within minutes.</p>
@@ -720,7 +717,7 @@ See the <a href="#obtaining-an-api-access-token">guided walkthrough</a> to compl
 For the quickest start, try our <a href="#postman-collection">Postman Collection</a> along with the API Reference documentation.</p>
 
 <p><strong>4) Partner with Us!</strong><br/>
-We&#39;d love to have a conversation with you and explore integration ideas for the mutual benefit of your business and TSheets. See our <a href="#https://www.tsheets.com/partners">Partnership Page</a> for details.</p>
+We&#39;d love to have a conversation with you and explore integration ideas for the mutual benefit of your business and TSheets. See our <a href="https://www.tsheets.com/partners">Partnership Page</a> for details.</p>
 <h2 id='postman-collection'>Postman Collection</h2>
 <p>The quickest way to get started is to use our <a href="http://www.getpostman.com/">Postman</a> request collection. The following steps will help you get up and running. If you prefer, our API can also easily be explored with other tools, like cURL.</p>
 <h3 id='1-open-the-tsheets-postman-collection'>1) Open the TSheets Postman Collection</h3>
@@ -768,12 +765,16 @@ If Postman returns a <i><b>"Could not get any response"</b></i> error, most like
 <h2 id='request-throttling'>Request Throttling</h2>
 <p>To prevent abuse of the TSheets API, we limit requests to a maximum of 300 calls within any 10 minute time window (subject to change). Rate limiting is primarily considered on a per-connection basis (per access token). If you exceed the current rate limit, you will receive a <code>429 &#39;Too many requests&#39;</code> response from our API. You will continue to receive a <code>429</code> response until you&#39;re out of the current time window. The threshold and time window may adjust dynamically downward if you are found to be abusing the system.</p>
 <h2 id='helper-libraries'>Helper Libraries</h2>
+<p><a href="https://github.com/tsheets/api_dotnet"><img src="images/ms.net-logo.png" alt="ms.net-logo" style="float:left; width:15%; margin-right: 1%"/></a><a href="https://github.com/tsheets/api_phplib"><img src="images/php-logo.png" alt="php" style="float:left; width:10%; margin-right: 1%"/></a></p>
+
+<p><p style="clear: both;"></p>
+
 <p>This documentation explains the format for calls to the TSheets API with code snippets in cURL and several other languages. Helper libraries are also available upon request to make it even easier for you to get started with TSheets.</p>
 
 <ul>
 <li><a href="https://github.com/tsheets/api_phplib">PHP Helper Library</a> (hosted on GitHub)</span></li>
 <li><a href="https://github.com/tsheets/api_dotnet">C#/.NET Helper Library</a> (hosted on GitHub)</li>
-<li><a href="mailto:help@tsheets.com?subject=API%20Helper%20Library%20Request">Request a library for your favorite language</a></li>
+<li><a href="mailto:SBSEGTimeTrackingSegment-Partnerships@intuit.com?subject=API%20Helper%20Library%20Request">Request a library for your favorite language</a></li>
 </ul>
 
 <p>While a helper library can make it easier to consume the API, it is certainly not necessary and the API is still very straight-forward to use even without one. Simply use a built-in http class or library for your language of choice.</p>
@@ -802,7 +803,7 @@ If Postman returns a <i><b>"Could not get any response"</b></i> error, most like
 <li>When editing or creating multiple objects, are you doing so via batch operations (i.e. up to 50 with one request vs. a separate request for each)?</li>
 </ul>
 <h2 id='getting-help'>Getting Help</h2>
-<p>If you encounter any problems consuming the API or have suggestions please feel free to contact us at <a href="mailto:help@tsheets.com">help@tsheets.com</a></p>
+<p>If you encounter any problems consuming the API or have suggestions please feel free to contact us at <a href="SBSEGTimeTrackingSegment-Partnerships@intuit.com">SBSEGTimeTrackingSegment-Partnerships@intuit.com</a></p>
 <h1 id='authentication'>Authentication</h1><h2 id='oauth2-0'>OAuth2.0</h2>
 <p><img src="images/oauth-2-sm.png" class="oauth2">
   <style>
@@ -1677,8 +1678,9 @@ We do not currently support <code>scope</code> for our clients, so the <code>sco
 <p>You can add a new object by sending an <code>HTTP POST</code> action to the resource&#39;s endpoint url. You must include a JSON representation of the object in your POST body, and the <code>Content-Type: application/json</code> header must be set in your request.</p>
 <h2 id='update-existing-resources-with-the-http-put-method'>Update existing resources with the HTTP PUT Method</h2>
 <blockquote>
-<p><strong>Example</strong>: Updating a resource.
-Request</p>
+<p><strong>Example</strong>: Updating a resource.</p>
+
+<p>Request</p>
 </blockquote>
 
 <pre class="highlight shell tab-shell"><code>curl -X PUT <span class="se">\</span>
@@ -2407,9 +2409,9 @@ Actual menu layout may differ.
 
 <p><br/></p>
 <h3 id='3-add-a-new-application'>3) Add a New Application</h3>
-<p>Select <em>Add a new application</em> at bottom rightIf the following window is not displayed, you can select <em>API</em> from  <em>Feature Add-ons</em> on the left navigation pane.</p>
+<p>Select <em>Add a new application</em> at bottom left.  If the following window is not displayed, you can select <em>API</em> from  <em>Feature Add-ons</em> on the left navigation pane.</p>
 
-<p><img src="images/api_app_settings.png" class="api_app_walkthrough"></p>
+<p><img src="images/api_app_settings1.png" class="api_app_walkthrough"></p>
 
 <p><br/></p>
 <h3 id='4-enter-api-application-details'>4) Enter API Application Details</h3>
@@ -2419,7 +2421,7 @@ Actual menu layout may differ.
 
 <p><br/></p>
 <h3 id='5-create-a-new-token'>5) Create a New Token</h3>
-<p>Almost there! Click <em>Add Token</em> at bottom right. This step will generate a token for immediate use.</p>
+<p>Almost there! Click <em>Add Token</em> at bottom left. This step will generate a token for immediate use.</p>
 
 <p><img src="images/api_app_settings3.png" class="api_app_walkthrough"/></p>
 
@@ -3855,8 +3857,9 @@ Custom Field Item <code>short_code</code> values must be unique for each TSheets
 </tbody></table>
 <h2 id='create-custom-field-items'>Create Custom Field Items</h2>
 <blockquote>
-<p><strong>Example</strong>: Create two new customfielditems. One succeeds. The other fails because of a duplicate <code>short_code</code> on an existing customfielditem.
-Request Body</p>
+<p><strong>Example</strong>: Create two new customfielditems. One succeeds. The other fails because of a duplicate <code>short_code</code> on an existing customfielditem.</p>
+
+<p>Request Body</p>
 </blockquote>
 
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
@@ -3874,6 +3877,7 @@ Request Body</p>
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
+
 </span></code></pre>
 
 <blockquote>
@@ -4089,8 +4093,9 @@ The maximum batch size is <i>50</i> customfielditems. If exceeded, a <code>413: 
 </aside>
 <h2 id='update-custom-field-items'>Update Custom Field Items</h2>
 <blockquote>
-<p><strong>Example</strong>: Change some information for each of these customfielditems.
-Request Body</p>
+<p><strong>Example</strong>: Change some information for each of these customfielditems.</p>
+
+<p>Request Body</p>
 </blockquote>
 
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
@@ -4111,17 +4116,19 @@ Request Body</p>
       </span><span class="s2">"name"</span><span class="p">:</span><span class="s2">"Mercruiser"</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
-</span><span class="p">}</span><span class="err">```</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
 
- </span><span class="err">&gt;</span><span class="w"> </span><span class="err">Request</span><span class="w">
+<blockquote>
+<p>Request</p>
+</blockquote>
 
-</span><span class="err">```shell</span><span class="w">
-</span><span class="err">curl</span><span class="w"> </span><span class="err">-X</span><span class="w"> </span><span class="err">PUT</span><span class="w"> </span><span class="err">\</span><span class="w">
-  </span><span class="err">https</span><span class="p">:</span><span class="err">//rest.tsheets.com/api/v</span><span class="mi">1</span><span class="err">/customfielditems</span><span class="w"> </span><span class="err">\</span><span class="w">
-  </span><span class="err">-H</span><span class="w"> </span><span class="err">'Authorization</span><span class="p">:</span><span class="w"> </span><span class="err">Bearer</span><span class="w"> </span><span class="err">&lt;TOKEN&gt;'</span><span class="w"> </span><span class="err">\</span><span class="w">
-  </span><span class="err">-H</span><span class="w"> </span><span class="err">'Content-Type</span><span class="p">:</span><span class="w"> </span><span class="err">application/json'</span><span class="w"> </span><span class="err">\</span><span class="w">
-  </span><span class="err">-d</span><span class="w"> </span><span class="err">'&lt;REQUEST</span><span class="w"> </span><span class="err">BODY&gt;'</span><span class="w">
-</span></code></pre><pre class="highlight csharp tab-csharp"><code><span class="kt">var</span> <span class="n">client</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">RestClient</span><span class="p">(</span><span class="s">"https://rest.tsheets.com/api/v1/customfielditems"</span><span class="p">);</span>
+<pre class="highlight shell tab-shell"><code>curl -X PUT <span class="se">\</span>
+  https://rest.tsheets.com/api/v1/customfielditems <span class="se">\</span>
+  -H <span class="s1">'Authorization: Bearer &lt;TOKEN&gt;'</span> <span class="se">\</span>
+  -H <span class="s1">'Content-Type: application/json'</span> <span class="se">\</span>
+  -d <span class="s1">'&lt;REQUEST BODY&gt;'</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="kt">var</span> <span class="n">client</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">RestClient</span><span class="p">(</span><span class="s">"https://rest.tsheets.com/api/v1/customfielditems"</span><span class="p">);</span>
 <span class="kt">var</span> <span class="n">request</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">RestRequest</span><span class="p">(</span><span class="n">Method</span><span class="p">.</span><span class="n">PUT</span><span class="p">);</span>
 <span class="n">request</span><span class="p">.</span><span class="nf">AddHeader</span><span class="p">(</span><span class="s">"Content-Type"</span><span class="p">,</span> <span class="s">"application/json"</span><span class="p">);</span>
 <span class="n">request</span><span class="p">.</span><span class="nf">AddHeader</span><span class="p">(</span><span class="s">"Authorization"</span><span class="p">,</span> <span class="s">"Bearer &lt;TOKEN&gt;"</span><span class="p">);</span>
@@ -4276,6 +4283,7 @@ Request Body</p>
     </span><span class="p">}</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
+
 </span></code></pre>
 
 <p>Edit one or more customfielditems for a customfield.</p>
@@ -5731,8 +5739,9 @@ If <code>uploaded_by_user_ids</code> is not set, the list of files uploaded by t
 </aside></p>
 <h2 id='upload-files'>Upload Files</h2>
 <blockquote>
-<p><strong>Example</strong>: Upload a file.
-Request Body</p>
+<p><strong>Example</strong>: Upload a file.</p>
+
+<p>Request Body</p>
 </blockquote>
 
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
@@ -5748,6 +5757,7 @@ Request Body</p>
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
+
 </span></code></pre>
 
 <blockquote>
@@ -6028,8 +6038,9 @@ The maximum batch size is <i>50</i> files. If exceeded, a <code>413: Request ent
 </aside>
 <h2 id='update-files'>Update Files</h2>
 <blockquote>
-<p><strong>Example</strong>: Update a file.
-Request Body</p>
+<p><strong>Example</strong>: Update a file.</p>
+
+<p>Request Body</p>
 </blockquote>
 
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
@@ -6043,17 +6054,19 @@ Request Body</p>
      </span><span class="p">}</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
-</span><span class="p">}</span><span class="err">```</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
 
- </span><span class="err">&gt;</span><span class="w"> </span><span class="err">Request</span><span class="w">
+<blockquote>
+<p>Request</p>
+</blockquote>
 
-</span><span class="err">```shell</span><span class="w">
-</span><span class="err">curl</span><span class="w"> </span><span class="err">-X</span><span class="w"> </span><span class="err">PUT</span><span class="w"> </span><span class="err">\</span><span class="w">
-  </span><span class="err">https</span><span class="p">:</span><span class="err">//rest.tsheets.com/api/v</span><span class="mi">1</span><span class="err">/files</span><span class="w"> </span><span class="err">\</span><span class="w">
-  </span><span class="err">-H</span><span class="w"> </span><span class="err">'Authorization</span><span class="p">:</span><span class="w"> </span><span class="err">Bearer</span><span class="w"> </span><span class="err">&lt;TOKEN&gt;'</span><span class="w"> </span><span class="err">\</span><span class="w">
-  </span><span class="err">-H</span><span class="w"> </span><span class="err">'Content-Type</span><span class="p">:</span><span class="w"> </span><span class="err">application/json'</span><span class="w"> </span><span class="err">\</span><span class="w">
-  </span><span class="err">-d</span><span class="w"> </span><span class="err">'&lt;REQUEST</span><span class="w"> </span><span class="err">BODY&gt;'</span><span class="w">
-</span></code></pre><pre class="highlight csharp tab-csharp"><code><span class="kt">var</span> <span class="n">client</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">RestClient</span><span class="p">(</span><span class="s">"https://rest.tsheets.com/api/v1/files"</span><span class="p">);</span>
+<pre class="highlight shell tab-shell"><code>curl -X PUT <span class="se">\</span>
+  https://rest.tsheets.com/api/v1/files <span class="se">\</span>
+  -H <span class="s1">'Authorization: Bearer &lt;TOKEN&gt;'</span> <span class="se">\</span>
+  -H <span class="s1">'Content-Type: application/json'</span> <span class="se">\</span>
+  -d <span class="s1">'&lt;REQUEST BODY&gt;'</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="kt">var</span> <span class="n">client</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">RestClient</span><span class="p">(</span><span class="s">"https://rest.tsheets.com/api/v1/files"</span><span class="p">);</span>
 <span class="kt">var</span> <span class="n">request</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">RestRequest</span><span class="p">(</span><span class="n">Method</span><span class="p">.</span><span class="n">PUT</span><span class="p">);</span>
 <span class="n">request</span><span class="p">.</span><span class="nf">AddHeader</span><span class="p">(</span><span class="s">"Content-Type"</span><span class="p">,</span> <span class="s">"application/json"</span><span class="p">);</span>
 <span class="n">request</span><span class="p">.</span><span class="nf">AddHeader</span><span class="p">(</span><span class="s">"Authorization"</span><span class="p">,</span> <span class="s">"Bearer &lt;TOKEN&gt;"</span><span class="p">);</span>
@@ -6249,6 +6262,7 @@ Request Body</p>
     </span><span class="p">}</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
+
 </span></code></pre>
 
 <p>Edit one or more files that are attached to objects.</p>
@@ -7272,8 +7286,9 @@ The <code>type</code> parameter must also be included when the <code>type_ids</c
 </tbody></table>
 <h2 id='create-geolocations'>Create Geolocations</h2>
 <blockquote>
-<p><strong>Example</strong>: Create two new geolocations.
-Request Body</p>
+<p><strong>Example</strong>: Create two new geolocations.</p>
+
+<p>Request Body</p>
 </blockquote>
 
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
@@ -7297,6 +7312,7 @@ Request Body</p>
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
+
 </span></code></pre>
 
 <blockquote>
@@ -8033,8 +8049,9 @@ The maximum batch size is <i>50</i> geolocations. If exceeded, a <code class="st
 </tbody></table>
 <h2 id='create-groups'>Create Groups</h2>
 <blockquote>
-<p><strong>Example</strong>: Create two new groups.
-Request Body</p>
+<p><strong>Example</strong>: Create two new groups.</p>
+
+<p>Request Body</p>
 </blockquote>
 
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
@@ -8050,6 +8067,7 @@ Request Body</p>
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
+
 </span></code></pre>
 
 <blockquote>
@@ -8359,8 +8377,9 @@ The maximum batch size is <i>50</i> groups. If exceeded, a <code class="standout
 </aside>
 <h2 id='update-groups'>Update Groups</h2>
 <blockquote>
-<p><strong>Example</strong>: Change the name for each of these groups, and clear the managers of the first one.
-Request Body</p>
+<p><strong>Example</strong>: Change the name for each of these groups, and clear the managers of the first one.</p>
+
+<p>Request Body</p>
 </blockquote>
 
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
@@ -8376,17 +8395,19 @@ Request Body</p>
       </span><span class="s2">"name"</span><span class="p">:</span><span class="s2">"Group 2b"</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
-</span><span class="p">}</span><span class="err">```</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
 
- </span><span class="err">&gt;</span><span class="w"> </span><span class="err">Request</span><span class="w">
+<blockquote>
+<p>Request</p>
+</blockquote>
 
-</span><span class="err">```shell</span><span class="w">
-</span><span class="err">curl</span><span class="w"> </span><span class="err">-X</span><span class="w"> </span><span class="err">PUT</span><span class="w"> </span><span class="err">\</span><span class="w">
-  </span><span class="err">https</span><span class="p">:</span><span class="err">//rest.tsheets.com/api/v</span><span class="mi">1</span><span class="err">/groups</span><span class="w"> </span><span class="err">\</span><span class="w">
-  </span><span class="err">-H</span><span class="w"> </span><span class="err">'Authorization</span><span class="p">:</span><span class="w"> </span><span class="err">Bearer</span><span class="w"> </span><span class="err">&lt;TOKEN&gt;'</span><span class="w"> </span><span class="err">\</span><span class="w">
-  </span><span class="err">-H</span><span class="w"> </span><span class="err">'Content-Type</span><span class="p">:</span><span class="w"> </span><span class="err">application/json'</span><span class="w"> </span><span class="err">\</span><span class="w">
-  </span><span class="err">-d</span><span class="w"> </span><span class="err">'&lt;REQUEST</span><span class="w"> </span><span class="err">BODY&gt;'</span><span class="w">
-</span></code></pre><pre class="highlight csharp tab-csharp"><code><span class="kt">var</span> <span class="n">client</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">RestClient</span><span class="p">(</span><span class="s">"https://rest.tsheets.com/api/v1/groups"</span><span class="p">);</span>
+<pre class="highlight shell tab-shell"><code>curl -X PUT <span class="se">\</span>
+  https://rest.tsheets.com/api/v1/groups <span class="se">\</span>
+  -H <span class="s1">'Authorization: Bearer &lt;TOKEN&gt;'</span> <span class="se">\</span>
+  -H <span class="s1">'Content-Type: application/json'</span> <span class="se">\</span>
+  -d <span class="s1">'&lt;REQUEST BODY&gt;'</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="kt">var</span> <span class="n">client</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">RestClient</span><span class="p">(</span><span class="s">"https://rest.tsheets.com/api/v1/groups"</span><span class="p">);</span>
 <span class="kt">var</span> <span class="n">request</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">RestRequest</span><span class="p">(</span><span class="n">Method</span><span class="p">.</span><span class="n">PUT</span><span class="p">);</span>
 <span class="n">request</span><span class="p">.</span><span class="nf">AddHeader</span><span class="p">(</span><span class="s">"Content-Type"</span><span class="p">,</span> <span class="s">"application/json"</span><span class="p">);</span>
 <span class="n">request</span><span class="p">.</span><span class="nf">AddHeader</span><span class="p">(</span><span class="s">"Authorization"</span><span class="p">,</span> <span class="s">"Bearer &lt;TOKEN&gt;"</span><span class="p">);</span>
@@ -8582,6 +8603,7 @@ Request Body</p>
     </span><span class="p">}</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
+
 </span></code></pre>
 
 <p>Edit one or more groups in your company.</p>
@@ -8630,8 +8652,9 @@ The maximum batch size is <i>50</i> groups. If exceeded, a <code class="standout
  
 <h1 id='invitations'>Invitations</h1><h2 id='create-invitations'>Create Invitations</h2>
 <blockquote>
-<p><strong>Example</strong>: Invite two new users to the company.
-Request Body</p>
+<p><strong>Example</strong>: Invite two new users to the company.</p>
+
+<p>Request Body</p>
 </blockquote>
 
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
@@ -8648,6 +8671,7 @@ Request Body</p>
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
+
 </span></code></pre>
 
 <blockquote>
@@ -9627,8 +9651,9 @@ For the <code>type</code> property:
 </tbody></table>
 <h2 id='create-jobcodes'>Create Jobcodes</h2>
 <blockquote>
-<p><strong>Example</strong>: Create two new jobcodes. One succeeds. The other fails because of a duplicate <code>short_code</code> on an existing jobcode.
-Request Body</p>
+<p><strong>Example</strong>: Create two new jobcodes. One succeeds. The other fails because of a duplicate <code>short_code</code> on an existing jobcode.</p>
+
+<p>Request Body</p>
 </blockquote>
 
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
@@ -9652,6 +9677,7 @@ Request Body</p>
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
+
 </span></code></pre>
 
 <blockquote>
@@ -9880,8 +9906,9 @@ The maximum batch size is <i>50</i> jobcodes. If exceeded, a <code class="stando
 </aside>
 <h2 id='update-jobcodes'>Update Jobcodes</h2>
 <blockquote>
-<p><strong>Example</strong>: Change some information for each of these jobcodes.
-Request Body</p>
+<p><strong>Example</strong>: Change some information for each of these jobcodes.</p>
+
+<p>Request Body</p>
 </blockquote>
 
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
@@ -9909,17 +9936,19 @@ Request Body</p>
       </span><span class="s2">"billable_rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"57.50"</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
-</span><span class="p">}</span><span class="err">```</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
 
- </span><span class="err">&gt;</span><span class="w"> </span><span class="err">Request</span><span class="w">
+<blockquote>
+<p>Request</p>
+</blockquote>
 
-</span><span class="err">```shell</span><span class="w">
-</span><span class="err">curl</span><span class="w"> </span><span class="err">-X</span><span class="w"> </span><span class="err">PUT</span><span class="w"> </span><span class="err">\</span><span class="w">
-  </span><span class="err">https</span><span class="p">:</span><span class="err">//rest.tsheets.com/api/v</span><span class="mi">1</span><span class="err">/jobcodes</span><span class="w"> </span><span class="err">\</span><span class="w">
-  </span><span class="err">-H</span><span class="w"> </span><span class="err">'Authorization</span><span class="p">:</span><span class="w"> </span><span class="err">Bearer</span><span class="w"> </span><span class="err">&lt;TOKEN&gt;'</span><span class="w"> </span><span class="err">\</span><span class="w">
-  </span><span class="err">-H</span><span class="w"> </span><span class="err">'Content-Type</span><span class="p">:</span><span class="w"> </span><span class="err">application/json'</span><span class="w"> </span><span class="err">\</span><span class="w">
-  </span><span class="err">-d</span><span class="w"> </span><span class="err">'&lt;REQUEST</span><span class="w"> </span><span class="err">BODY&gt;'</span><span class="w">
-</span></code></pre><pre class="highlight csharp tab-csharp"><code><span class="kt">var</span> <span class="n">client</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">RestClient</span><span class="p">(</span><span class="s">"https://rest.tsheets.com/api/v1/jobcodes"</span><span class="p">);</span>
+<pre class="highlight shell tab-shell"><code>curl -X PUT <span class="se">\</span>
+  https://rest.tsheets.com/api/v1/jobcodes <span class="se">\</span>
+  -H <span class="s1">'Authorization: Bearer &lt;TOKEN&gt;'</span> <span class="se">\</span>
+  -H <span class="s1">'Content-Type: application/json'</span> <span class="se">\</span>
+  -d <span class="s1">'&lt;REQUEST BODY&gt;'</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="kt">var</span> <span class="n">client</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">RestClient</span><span class="p">(</span><span class="s">"https://rest.tsheets.com/api/v1/jobcodes"</span><span class="p">);</span>
 <span class="kt">var</span> <span class="n">request</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">RestRequest</span><span class="p">(</span><span class="n">Method</span><span class="p">.</span><span class="n">PUT</span><span class="p">);</span>
 <span class="n">request</span><span class="p">.</span><span class="nf">AddHeader</span><span class="p">(</span><span class="s">"Content-Type"</span><span class="p">,</span> <span class="s">"application/json"</span><span class="p">);</span>
 <span class="n">request</span><span class="p">.</span><span class="nf">AddHeader</span><span class="p">(</span><span class="s">"Authorization"</span><span class="p">,</span> <span class="s">"Bearer &lt;TOKEN&gt;"</span><span class="p">);</span>
@@ -10107,6 +10136,7 @@ Request Body</p>
     </span><span class="p">}</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
+
 </span></code></pre>
 
 <p>Edit one or more jobcodes in your company.</p>
@@ -10675,8 +10705,9 @@ The maximum batch size is <i>50</i> jobcodes. If exceeded, a <code class="stando
 </tbody></table>
 <h2 id='create-jobcode-assignments'>Create Jobcode Assignments</h2>
 <blockquote>
-<p><strong>Example</strong>: Create two new jobcode assignments. One succeeds. The other fails because of a permissions issue with the <code>user_id</code>.
-Request Body</p>
+<p><strong>Example</strong>: Create two new jobcode assignments. One succeeds. The other fails because of a permissions issue with the <code>user_id</code>.</p>
+
+<p>Request Body</p>
 </blockquote>
 
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
@@ -10692,6 +10723,7 @@ Request Body</p>
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
+
 </span></code></pre>
 
 <blockquote>
@@ -12173,8 +12205,9 @@ The maximum batch size is <i>50</i> jobcode assignments. If exceeded, a <code cl
 </tbody></table>
 <h2 id='create-locations'>Create Locations</h2>
 <blockquote>
-<p><strong>Example</strong>: Create two new locations. One of them linked to an existing jobcode.
-Request Body</p>
+<p><strong>Example</strong>: Create two new locations. One of them linked to an existing jobcode.</p>
+
+<p>Request Body</p>
 </blockquote>
 
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
@@ -12207,6 +12240,7 @@ Request Body</p>
     </span><span class="s2">"notes"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Beware the dog!"</span><span class="w">
   </span><span class="p">}]</span><span class="w">
 </span><span class="p">}</span><span class="w">
+
 </span></code></pre>
 
 <blockquote>
@@ -12495,8 +12529,9 @@ The maximum batch size is <i>50</i> locations. If exceeded, a <code class="stand
 </aside>
 <h2 id='update-locations'>Update Locations</h2>
 <blockquote>
-<p><strong>Example</strong>: Change some information for each of these locations as well as unlink one of the location from a jobcode.
-Request Body</p>
+<p><strong>Example</strong>: Change some information for each of these locations as well as unlink one of the location from a jobcode.</p>
+
+<p>Request Body</p>
 </blockquote>
 
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
@@ -12530,17 +12565,19 @@ Request Body</p>
     </span><span class="s2">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Any House on Any Street"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"notes"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Beware the dog!"</span><span class="w">
   </span><span class="p">}]</span><span class="w">
-</span><span class="p">}</span><span class="err">```</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
 
- </span><span class="err">&gt;</span><span class="w"> </span><span class="err">Request</span><span class="w">
+<blockquote>
+<p>Request</p>
+</blockquote>
 
-</span><span class="err">```shell</span><span class="w">
-</span><span class="err">curl</span><span class="w"> </span><span class="err">-X</span><span class="w"> </span><span class="err">PUT</span><span class="w"> </span><span class="err">\</span><span class="w">
-  </span><span class="err">https</span><span class="p">:</span><span class="err">//rest.tsheets.com/api/v</span><span class="mi">1</span><span class="err">/locations</span><span class="w"> </span><span class="err">\</span><span class="w">
-  </span><span class="err">-H</span><span class="w"> </span><span class="err">'Authorization</span><span class="p">:</span><span class="w"> </span><span class="err">Bearer</span><span class="w"> </span><span class="err">&lt;TOKEN&gt;'</span><span class="w"> </span><span class="err">\</span><span class="w">
-  </span><span class="err">-H</span><span class="w"> </span><span class="err">'Content-Type</span><span class="p">:</span><span class="w"> </span><span class="err">application/json'</span><span class="w"> </span><span class="err">\</span><span class="w">
-  </span><span class="err">-d</span><span class="w"> </span><span class="err">'&lt;REQUEST</span><span class="w"> </span><span class="err">BODY&gt;'</span><span class="w">
-</span></code></pre><pre class="highlight csharp tab-csharp"><code><span class="kt">var</span> <span class="n">client</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">RestClient</span><span class="p">(</span><span class="s">"https://rest.tsheets.com/api/v1/locations"</span><span class="p">);</span>
+<pre class="highlight shell tab-shell"><code>curl -X PUT <span class="se">\</span>
+  https://rest.tsheets.com/api/v1/locations <span class="se">\</span>
+  -H <span class="s1">'Authorization: Bearer &lt;TOKEN&gt;'</span> <span class="se">\</span>
+  -H <span class="s1">'Content-Type: application/json'</span> <span class="se">\</span>
+  -d <span class="s1">'&lt;REQUEST BODY&gt;'</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="kt">var</span> <span class="n">client</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">RestClient</span><span class="p">(</span><span class="s">"https://rest.tsheets.com/api/v1/locations"</span><span class="p">);</span>
 <span class="kt">var</span> <span class="n">request</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">RestRequest</span><span class="p">(</span><span class="n">Method</span><span class="p">.</span><span class="n">PUT</span><span class="p">);</span>
 <span class="n">request</span><span class="p">.</span><span class="nf">AddHeader</span><span class="p">(</span><span class="s">"Content-Type"</span><span class="p">,</span> <span class="s">"application/json"</span><span class="p">);</span>
 <span class="n">request</span><span class="p">.</span><span class="nf">AddHeader</span><span class="p">(</span><span class="s">"Authorization"</span><span class="p">,</span> <span class="s">"Bearer &lt;TOKEN&gt;"</span><span class="p">);</span>
@@ -12737,6 +12774,7 @@ Request Body</p>
     </span><span class="p">}</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
+
 </span></code></pre>
 
 <p>Edit one or more locations in your company.</p>
@@ -13993,8 +14031,9 @@ Only administrators may retrieve notifications for users other than themselves. 
 </aside>
 <h2 id='create-notifications'>Create Notifications</h2>
 <blockquote>
-<p><strong>Example</strong>: Create two new notifications.
-Request Body</p>
+<p><strong>Example</strong>: Create two new notifications.</p>
+
+<p>Request Body</p>
 </blockquote>
 
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
@@ -14012,6 +14051,7 @@ Request Body</p>
     </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Please clock out!"</span><span class="w">
   </span><span class="p">}]</span><span class="w">
 </span><span class="p">}</span><span class="w">
+
 </span></code></pre>
 
 <blockquote>
@@ -14842,8 +14882,9 @@ The maximum batch size is <i>50</i> notifications. If exceeded, a <code class="s
 </tbody></table>
 <h2 id='create-reminders'>Create Reminders</h2>
 <blockquote>
-<p><strong>Example</strong>: Create user-specific clock-in and clock-out reminders for a user.
-Request Body</p>
+<p><strong>Example</strong>: Create user-specific clock-in and clock-out reminders for a user.</p>
+
+<p>Request Body</p>
 </blockquote>
 
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
@@ -14865,6 +14906,7 @@ Request Body</p>
     </span><span class="s2">"enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
   </span><span class="p">}]</span><span class="w">
 </span><span class="p">}</span><span class="w">
+
 </span></code></pre>
 
 <blockquote>
@@ -15103,8 +15145,9 @@ The maximum batch size is <i>50</i> reminders. If exceeded, a <code class="stand
 </aside>
 <h2 id='update-reminders'>Update Reminders</h2>
 <blockquote>
-<p><strong>Example</strong>: Edit a user&#39;s clock-in and clock-out reminder due times and days of week.
-Request Body</p>
+<p><strong>Example</strong>: Edit a user&#39;s clock-in and clock-out reminder due times and days of week.</p>
+
+<p>Request Body</p>
 </blockquote>
 
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
@@ -15125,17 +15168,19 @@ Request Body</p>
     </span><span class="s2">"active"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
     </span><span class="s2">"enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
   </span><span class="p">}]</span><span class="w">
-</span><span class="p">}</span><span class="err">```</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
 
- </span><span class="err">&gt;</span><span class="w"> </span><span class="err">Request</span><span class="w">
+<blockquote>
+<p>Request</p>
+</blockquote>
 
-</span><span class="err">```shell</span><span class="w">
-</span><span class="err">curl</span><span class="w"> </span><span class="err">-X</span><span class="w"> </span><span class="err">PUT</span><span class="w"> </span><span class="err">\</span><span class="w">
-  </span><span class="err">https</span><span class="p">:</span><span class="err">//rest.tsheets.com/api/v</span><span class="mi">1</span><span class="err">/reminders</span><span class="w"> </span><span class="err">\</span><span class="w">
-  </span><span class="err">-H</span><span class="w"> </span><span class="err">'Authorization</span><span class="p">:</span><span class="w"> </span><span class="err">Bearer</span><span class="w"> </span><span class="err">&lt;TOKEN&gt;'</span><span class="w"> </span><span class="err">\</span><span class="w">
-  </span><span class="err">-H</span><span class="w"> </span><span class="err">'Content-Type</span><span class="p">:</span><span class="w"> </span><span class="err">application/json'</span><span class="w"> </span><span class="err">\</span><span class="w">
-  </span><span class="err">-d</span><span class="w"> </span><span class="err">'&lt;REQUEST</span><span class="w"> </span><span class="err">BODY&gt;'</span><span class="w">
-</span></code></pre><pre class="highlight csharp tab-csharp"><code><span class="kt">var</span> <span class="n">client</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">RestClient</span><span class="p">(</span><span class="s">"https://rest.tsheets.com/api/v1/reminders"</span><span class="p">);</span>
+<pre class="highlight shell tab-shell"><code>curl -X PUT <span class="se">\</span>
+  https://rest.tsheets.com/api/v1/reminders <span class="se">\</span>
+  -H <span class="s1">'Authorization: Bearer &lt;TOKEN&gt;'</span> <span class="se">\</span>
+  -H <span class="s1">'Content-Type: application/json'</span> <span class="se">\</span>
+  -d <span class="s1">'&lt;REQUEST BODY&gt;'</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="kt">var</span> <span class="n">client</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">RestClient</span><span class="p">(</span><span class="s">"https://rest.tsheets.com/api/v1/reminders"</span><span class="p">);</span>
 <span class="kt">var</span> <span class="n">request</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">RestRequest</span><span class="p">(</span><span class="n">Method</span><span class="p">.</span><span class="n">PUT</span><span class="p">);</span>
 <span class="n">request</span><span class="p">.</span><span class="nf">AddHeader</span><span class="p">(</span><span class="s">"Content-Type"</span><span class="p">,</span> <span class="s">"application/json"</span><span class="p">);</span>
 <span class="n">request</span><span class="p">.</span><span class="nf">AddHeader</span><span class="p">(</span><span class="s">"Authorization"</span><span class="p">,</span> <span class="s">"Bearer &lt;TOKEN&gt;"</span><span class="p">);</span>
@@ -15281,6 +15326,7 @@ Request Body</p>
     </span><span class="p">}</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
+
 </span></code></pre>
 
 <p>Edit one or more reminders for employees within your company.</p>
@@ -15367,8 +15413,9 @@ The maximum batch size is <i>50</i> reminders. If exceeded, a <code class="stand
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 <blockquote>
-<p><strong>Example</strong>: Retrieve a <code>current_totals</code> report for all users on an account.
-Request Body</p>
+<p><strong>Example</strong>: Retrieve a <code>current_totals</code> report for all users on an account.</p>
+
+<p>Request Body</p>
 </blockquote>
 
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
@@ -15376,6 +15423,7 @@ Request Body</p>
     </span><span class="s2">"on_the_clock"</span><span class="p">:</span><span class="w"> </span><span class="s2">"both"</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
+
 </span></code></pre>
 
 <blockquote>
@@ -15763,8 +15811,9 @@ When a user is off the clock, both the <code>timesheet_id</code> and <code>jobco
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 <blockquote>
-<p><strong>Example</strong>: Retrieve a payroll report for a given time period for all users on an account.
-Request Body</p>
+<p><strong>Example</strong>: Retrieve a payroll report for a given time period for all users on an account.</p>
+
+<p>Request Body</p>
 </blockquote>
 
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
@@ -15775,6 +15824,7 @@ Request Body</p>
     </span><span class="s2">"advanced_overtime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"no"</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
+
 </span></code></pre>
 
 <blockquote>
@@ -16178,7 +16228,7 @@ The <code>advanced_overtime</code> setting is required to be passed as 'yes' if 
                                         </span><span class="err">#</span><span class="w">   </span><span class="err">contained</span><span class="w"> </span><span class="err">in</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">report.</span><span class="w">
         </span><span class="s2">"82026"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">                      </span><span class="err">#</span><span class="w"> </span><span class="err">Jobcode</span><span class="w"> </span><span class="err">ID</span><span class="w">
           </span><span class="s2">"jobcode_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">82026</span><span class="p">,</span><span class="w">           
-          </span><span class="s2">"total_re_seconds"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">        </span><span class="err">#</span><span class="w"> </span><span class="err">Total</span><span class="w"> </span><span class="err">regular</span><span class="w"> </span><span class="err">seconds</span><span class="w"> </span><span class="err">for</span><span class="w"> </span><span class="err">this</span><span class="w"> </span><span class="err">jobcode.</span><span class="w">
+          </span><span class="s2">"total_re_seconds"</span><span class="p">:</span><span class="w"> </span><span class="mi">10800</span><span class="w">     </span><span class="err">#</span><span class="w"> </span><span class="err">Total</span><span class="w"> </span><span class="err">regular</span><span class="w"> </span><span class="err">seconds</span><span class="w"> </span><span class="err">for</span><span class="w"> </span><span class="err">this</span><span class="w"> </span><span class="err">jobcode.</span><span class="w">
           </span><span class="s2">"total_pto_seconds"</span><span class="p">:</span><span class="w"> </span><span class="mi">28800</span><span class="p">,</span><span class="w">   </span><span class="err">#</span><span class="w"> </span><span class="err">Total</span><span class="w"> </span><span class="err">PTO</span><span class="w"> </span><span class="err">seconds</span><span class="w"> </span><span class="err">for</span><span class="w"> </span><span class="err">this</span><span class="w"> </span><span class="err">jobcode.</span><span class="w">
           </span><span class="s2">"total_work_seconds"</span><span class="p">:</span><span class="w"> </span><span class="mi">28800</span><span class="p">,</span><span class="w">  </span><span class="err">#</span><span class="w"> </span><span class="err">Total</span><span class="w"> </span><span class="err">number</span><span class="w"> </span><span class="err">of</span><span class="w"> </span><span class="err">seconds</span><span class="w"> </span><span class="err">for</span><span class="w"> </span><span class="err">this</span><span class="w"> </span><span class="err">jobcode.</span><span class="w">
           </span><span class="s2">"overtime_seconds"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">         </span><span class="err">#</span><span class="w"> </span><span class="err">This</span><span class="w"> </span><span class="err">replaces</span><span class="w"> </span><span class="s2">"total_ot_seconds"</span><span class="w"> 
@@ -16208,7 +16258,7 @@ The <code>advanced_overtime</code> setting is required to be passed as 'yes' if 
           </span><span class="s2">"totals"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">                   </span><span class="err">#</span><span class="w"> </span><span class="err">Totals</span><span class="w"> </span><span class="err">for</span><span class="w"> </span><span class="err">each</span><span class="w"> </span><span class="err">jobcode</span><span class="p">,</span><span class="w"> </span><span class="err">for</span><span class="w"> </span><span class="err">this</span><span class="w"> </span><span class="err">user.</span><span class="w">
             </span><span class="s2">"82026"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">                  </span><span class="err">#</span><span class="w"> </span><span class="err">Jobcode</span><span class="w"> </span><span class="err">ID</span><span class="w">
               </span><span class="s2">"jobcode_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">82026</span><span class="p">,</span><span class="w">         
-              </span><span class="s2">"total_re_seconds"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"total_re_seconds"</span><span class="p">:</span><span class="w"> </span><span class="mi">10800</span><span class="p">,</span><span class="w">
               </span><span class="s2">"total_pto_seconds"</span><span class="p">:</span><span class="w"> </span><span class="mi">28800</span><span class="p">,</span><span class="w">
               </span><span class="s2">"total_work_seconds"</span><span class="p">:</span><span class="w"> </span><span class="mi">28800</span><span class="w">
               </span><span class="s2">"overtime_seconds"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">           
@@ -16236,7 +16286,7 @@ The <code>advanced_overtime</code> setting is required to be passed as 'yes' if 
             </span><span class="s2">"2017-03-15"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">             </span><span class="err">#</span><span class="w"> </span><span class="err">Date</span><span class="w">
               </span><span class="s2">"82026"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">                </span><span class="err">#</span><span class="w"> </span><span class="err">Jobcode</span><span class="w"> </span><span class="err">ID</span><span class="w">
                 </span><span class="s2">"jobcode_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">82026</span><span class="p">,</span><span class="w">        
-                </span><span class="s2">"total_re_seconds"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"total_re_seconds"</span><span class="p">:</span><span class="w"> </span><span class="mi">10800</span><span class="p">,</span><span class="w">
                 </span><span class="s2">"total_pto_seconds"</span><span class="p">:</span><span class="w"> </span><span class="mi">28800</span><span class="p">,</span><span class="w">
                 </span><span class="s2">"total_unpaid_seconds"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
                 </span><span class="s2">"total_work_seconds"</span><span class="p">:</span><span class="w"> </span><span class="mi">28800</span><span class="w">
@@ -16270,8 +16320,9 @@ The <code>advanced_overtime</code> setting is required to be passed as 'yes' if 
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 <blockquote>
-<p><strong>Example</strong>: Retrieve a payroll report, broken down by jobcode, for the given time period within an account.
-Request Body</p>
+<p><strong>Example</strong>: Retrieve a payroll report, broken down by jobcode, for the given time period within an account.</p>
+
+<p>Request Body</p>
 </blockquote>
 
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
@@ -16282,6 +16333,7 @@ Request Body</p>
     </span><span class="s2">"advanced_overtime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"no"</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
+
 </span></code></pre>
 
 <blockquote>
@@ -17136,8 +17188,9 @@ The <code>advanced_overtime</code> setting is required to be passed as 'yes' if 
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 <blockquote>
-<p><strong>Example</strong>: Retrieve a project report for time recorded within an account.
-Request Body</p>
+<p><strong>Example</strong>: Retrieve a project report for time recorded within an account.</p>
+
+<p>Request Body</p>
 </blockquote>
 
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
@@ -17158,6 +17211,7 @@ Request Body</p>
     </span><span class="p">]</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
+
 </span></code></pre>
 
 <blockquote>
@@ -18323,8 +18377,9 @@ Request Body</p>
 </tbody></table>
 <h2 id='create-schedule-events'>Create Schedule Events</h2>
 <blockquote>
-<p><strong>Example</strong>: Create two new events: one unassigned, and the second assigned to two users.
-Request Body</p>
+<p><strong>Example</strong>: Create two new events: one unassigned, and the second assigned to two users.</p>
+
+<p>Request Body</p>
 </blockquote>
 
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
@@ -18347,6 +18402,7 @@ Request Body</p>
   </span><span class="p">}],</span><span class="w">
   </span><span class="s2">"team_events"</span><span class="p">:</span><span class="w"> </span><span class="s2">"base"</span><span class="w">
 </span><span class="p">}</span><span class="w">
+
 </span></code></pre>
 
 <blockquote>
@@ -18616,8 +18672,9 @@ The maximum batch size is <i>50</i> schedule events. If exceeded, a <code class=
 </aside>
 <h2 id='update-schedule-events'>Update Schedule Events</h2>
 <blockquote>
-<p><strong>Example</strong>: Edit the title of an event.
-Request Body</p>
+<p><strong>Example</strong>: Edit the title of an event.</p>
+
+<p>Request Body</p>
 </blockquote>
 
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
@@ -18630,17 +18687,19 @@ Request Body</p>
     </span><span class="p">}</span><span class="w">
   </span><span class="p">],</span><span class="w">
   </span><span class="s2">"team_events"</span><span class="p">:</span><span class="w"> </span><span class="s2">"base"</span><span class="w">
-</span><span class="p">}</span><span class="err">```</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
 
- </span><span class="err">&gt;</span><span class="w"> </span><span class="err">Request</span><span class="w">
+<blockquote>
+<p>Request</p>
+</blockquote>
 
-</span><span class="err">```shell</span><span class="w">
-</span><span class="err">curl</span><span class="w"> </span><span class="err">-X</span><span class="w"> </span><span class="err">PUT</span><span class="w"> </span><span class="err">\</span><span class="w">
-  </span><span class="err">https</span><span class="p">:</span><span class="err">//rest.tsheets.com/api/v</span><span class="mi">1</span><span class="err">/schedule_events</span><span class="w"> </span><span class="err">\</span><span class="w">
-  </span><span class="err">-H</span><span class="w"> </span><span class="err">'Authorization</span><span class="p">:</span><span class="w"> </span><span class="err">Bearer</span><span class="w"> </span><span class="err">&lt;TOKEN&gt;'</span><span class="w"> </span><span class="err">\</span><span class="w">
-  </span><span class="err">-H</span><span class="w"> </span><span class="err">'Content-Type</span><span class="p">:</span><span class="w"> </span><span class="err">application/json'</span><span class="w"> </span><span class="err">\</span><span class="w">
-  </span><span class="err">-d</span><span class="w"> </span><span class="err">'&lt;REQUEST</span><span class="w"> </span><span class="err">BODY&gt;'</span><span class="w">
-</span></code></pre><pre class="highlight csharp tab-csharp"><code><span class="kt">var</span> <span class="n">client</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">RestClient</span><span class="p">(</span><span class="s">"https://rest.tsheets.com/api/v1/schedule_events"</span><span class="p">);</span>
+<pre class="highlight shell tab-shell"><code>curl -X PUT <span class="se">\</span>
+  https://rest.tsheets.com/api/v1/schedule_events <span class="se">\</span>
+  -H <span class="s1">'Authorization: Bearer &lt;TOKEN&gt;'</span> <span class="se">\</span>
+  -H <span class="s1">'Content-Type: application/json'</span> <span class="se">\</span>
+  -d <span class="s1">'&lt;REQUEST BODY&gt;'</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="kt">var</span> <span class="n">client</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">RestClient</span><span class="p">(</span><span class="s">"https://rest.tsheets.com/api/v1/schedule_events"</span><span class="p">);</span>
 <span class="kt">var</span> <span class="n">request</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">RestRequest</span><span class="p">(</span><span class="n">Method</span><span class="p">.</span><span class="n">PUT</span><span class="p">);</span>
 <span class="n">request</span><span class="p">.</span><span class="nf">AddHeader</span><span class="p">(</span><span class="s">"Content-Type"</span><span class="p">,</span> <span class="s">"application/json"</span><span class="p">);</span>
 <span class="n">request</span><span class="p">.</span><span class="nf">AddHeader</span><span class="p">(</span><span class="s">"Authorization"</span><span class="p">,</span> <span class="s">"Bearer &lt;TOKEN&gt;"</span><span class="p">);</span>
@@ -18801,6 +18860,7 @@ Request Body</p>
     </span><span class="p">}</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
+
 </span></code></pre>
 
 <p>Edit one or more schedule events.</p>
@@ -20130,8 +20190,9 @@ Each employee/user may only ever have a single active timesheet (no <code>end_ti
 </tbody></table>
 <h2 id='create-timesheets'>Create Timesheets</h2>
 <blockquote>
-<p><strong>Example</strong>: Create three new timesheets (one manual and two regular). Two succeed. The third fails because of an overlap with an existing timesheet.
-Request Body</p>
+<p><strong>Example</strong>: Create three new timesheets (one manual and two regular). Two succeed. The third fails because of an overlap with an existing timesheet.</p>
+
+<p>Request Body</p>
 </blockquote>
 
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
@@ -20183,6 +20244,7 @@ Request Body</p>
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
+
 </span></code></pre>
 
 <blockquote>
@@ -20609,8 +20671,9 @@ The maximum batch size is <i>50</i> timesheets. If exceeded, a <code class="stan
 </aside>
 <h2 id='update-timesheets'>Update Timesheets</h2>
 <blockquote>
-<p><strong>Example</strong>: Change some information for each of these timesheets.
-Request Body</p>
+<p><strong>Example</strong>: Change some information for each of these timesheets.</p>
+
+<p>Request Body</p>
 </blockquote>
 
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
@@ -20623,17 +20686,19 @@ Request Body</p>
     </span><span class="s2">"date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-08-08"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"duration"</span><span class="p">:</span><span class="w"> </span><span class="mi">15552</span><span class="w">
   </span><span class="p">}]</span><span class="w">
-</span><span class="p">}</span><span class="err">```</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
 
- </span><span class="err">&gt;</span><span class="w"> </span><span class="err">Request</span><span class="w">
+<blockquote>
+<p>Request</p>
+</blockquote>
 
-</span><span class="err">```shell</span><span class="w">
-</span><span class="err">curl</span><span class="w"> </span><span class="err">-X</span><span class="w"> </span><span class="err">PUT</span><span class="w"> </span><span class="err">\</span><span class="w">
-  </span><span class="err">https</span><span class="p">:</span><span class="err">//rest.tsheets.com/api/v</span><span class="mi">1</span><span class="err">/timesheets</span><span class="w"> </span><span class="err">\</span><span class="w">
-  </span><span class="err">-H</span><span class="w"> </span><span class="err">'Authorization</span><span class="p">:</span><span class="w"> </span><span class="err">Bearer</span><span class="w"> </span><span class="err">&lt;TOKEN&gt;'</span><span class="w"> </span><span class="err">\</span><span class="w">
-  </span><span class="err">-H</span><span class="w"> </span><span class="err">'Content-Type</span><span class="p">:</span><span class="w"> </span><span class="err">application/json'</span><span class="w"> </span><span class="err">\</span><span class="w">
-  </span><span class="err">-d</span><span class="w"> </span><span class="err">'&lt;REQUEST</span><span class="w"> </span><span class="err">BODY&gt;'</span><span class="w">
-</span></code></pre><pre class="highlight csharp tab-csharp"><code><span class="kt">var</span> <span class="n">client</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">RestClient</span><span class="p">(</span><span class="s">"https://rest.tsheets.com/api/v1/timesheets"</span><span class="p">);</span>
+<pre class="highlight shell tab-shell"><code>curl -X PUT <span class="se">\</span>
+  https://rest.tsheets.com/api/v1/timesheets <span class="se">\</span>
+  -H <span class="s1">'Authorization: Bearer &lt;TOKEN&gt;'</span> <span class="se">\</span>
+  -H <span class="s1">'Content-Type: application/json'</span> <span class="se">\</span>
+  -d <span class="s1">'&lt;REQUEST BODY&gt;'</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="kt">var</span> <span class="n">client</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">RestClient</span><span class="p">(</span><span class="s">"https://rest.tsheets.com/api/v1/timesheets"</span><span class="p">);</span>
 <span class="kt">var</span> <span class="n">request</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">RestRequest</span><span class="p">(</span><span class="n">Method</span><span class="p">.</span><span class="n">PUT</span><span class="p">);</span>
 <span class="n">request</span><span class="p">.</span><span class="nf">AddHeader</span><span class="p">(</span><span class="s">"Content-Type"</span><span class="p">,</span> <span class="s">"application/json"</span><span class="p">);</span>
 <span class="n">request</span><span class="p">.</span><span class="nf">AddHeader</span><span class="p">(</span><span class="s">"Authorization"</span><span class="p">,</span> <span class="s">"Bearer &lt;TOKEN&gt;"</span><span class="p">);</span>
@@ -20933,6 +20998,7 @@ Request Body</p>
     </span><span class="p">}</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
+
 </span></code></pre>
 
 <p>Edit one or more timesheets in your company.</p>
@@ -22903,8 +22969,9 @@ The following fields are considered <i>private</i> and are exposed only to manag
 </tbody></table>
 <h2 id='create-users'>Create Users</h2>
 <blockquote>
-<p><strong>Example</strong>: Create two new users.
-Request Body</p>
+<p><strong>Example</strong>: Create two new users.</p>
+
+<p>Request Body</p>
 </blockquote>
 
 <pre class="highlight json tab-json"><code><span class="w"> </span><span class="p">{</span><span class="w">
@@ -22924,6 +22991,7 @@ Request Body</p>
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
+
 </span></code></pre>
 
 <blockquote>
@@ -23285,8 +23353,9 @@ The maximum batch size is <i>50</i> users. If exceeded, a <code class="standout"
 </aside>
 <h2 id='update-users'>Update Users</h2>
 <blockquote>
-<p><strong>Example</strong>: Change the last name for each of these employees, and add the mobile permission to the second one.
-Request Body</p>
+<p><strong>Example</strong>: Change the last name for each of these employees, and add the mobile permission to the second one.</p>
+
+<p>Request Body</p>
 </blockquote>
 
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
@@ -23300,17 +23369,19 @@ Request Body</p>
       </span><span class="s2">"mobile"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">}]</span><span class="w">
-</span><span class="p">}</span><span class="err">```</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
 
- </span><span class="err">&gt;</span><span class="w"> </span><span class="err">Request</span><span class="w">
+<blockquote>
+<p>Request</p>
+</blockquote>
 
-</span><span class="err">```shell</span><span class="w">
-</span><span class="err">curl</span><span class="w"> </span><span class="err">-X</span><span class="w"> </span><span class="err">PUT</span><span class="w"> </span><span class="err">\</span><span class="w">
-  </span><span class="err">https</span><span class="p">:</span><span class="err">//rest.tsheets.com/api/v</span><span class="mi">1</span><span class="err">/users</span><span class="w"> </span><span class="err">\</span><span class="w">
-  </span><span class="err">-H</span><span class="w"> </span><span class="err">'Authorization</span><span class="p">:</span><span class="w"> </span><span class="err">Bearer</span><span class="w"> </span><span class="err">&lt;TOKEN&gt;'</span><span class="w"> </span><span class="err">\</span><span class="w">
-  </span><span class="err">-H</span><span class="w"> </span><span class="err">'Content-Type</span><span class="p">:</span><span class="w"> </span><span class="err">application/json'</span><span class="w"> </span><span class="err">\</span><span class="w">
-  </span><span class="err">-d</span><span class="w"> </span><span class="err">'&lt;REQUEST</span><span class="w"> </span><span class="err">BODY&gt;'</span><span class="w">
-</span></code></pre><pre class="highlight csharp tab-csharp"><code><span class="kt">var</span> <span class="n">client</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">RestClient</span><span class="p">(</span><span class="s">"https://rest.tsheets.com/api/v1/users"</span><span class="p">);</span>
+<pre class="highlight shell tab-shell"><code>curl -X PUT <span class="se">\</span>
+  https://rest.tsheets.com/api/v1/users <span class="se">\</span>
+  -H <span class="s1">'Authorization: Bearer &lt;TOKEN&gt;'</span> <span class="se">\</span>
+  -H <span class="s1">'Content-Type: application/json'</span> <span class="se">\</span>
+  -d <span class="s1">'&lt;REQUEST BODY&gt;'</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="kt">var</span> <span class="n">client</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">RestClient</span><span class="p">(</span><span class="s">"https://rest.tsheets.com/api/v1/users"</span><span class="p">);</span>
 <span class="kt">var</span> <span class="n">request</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">RestRequest</span><span class="p">(</span><span class="n">Method</span><span class="p">.</span><span class="n">PUT</span><span class="p">);</span>
 <span class="n">request</span><span class="p">.</span><span class="nf">AddHeader</span><span class="p">(</span><span class="s">"Content-Type"</span><span class="p">,</span> <span class="s">"application/json"</span><span class="p">);</span>
 <span class="n">request</span><span class="p">.</span><span class="nf">AddHeader</span><span class="p">(</span><span class="s">"Authorization"</span><span class="p">,</span> <span class="s">"Bearer &lt;TOKEN&gt;"</span><span class="p">);</span>
@@ -23631,6 +23702,7 @@ Request Body</p>
     </span><span class="p">}</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
+
 </span></code></pre>
 
 <p>Edit one or more users in your company.  The batch of user updates is passed as a JSON string in the body of the HTTP request.  If the value passed in is the same as it was previously, or if a particular property is not passed in at all, it will be ignored.</p>
