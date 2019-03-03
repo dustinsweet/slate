@@ -37,6 +37,19 @@ request.AddHeader("Content-Type", "application/json");
 IRestResponse response = client.Execute(request);
 ```
 
+```vb
+Dim client = New RestClient("https://rest.tsheets.com/api/v1/<%= endpoint %>")
+Dim request = New RestRequest(Method.POST)
+request.AddHeader("Authorization", "Bearer <TOKEN>")
+<% if defined? extra_headers -%>
+  <% extra_headers.each do |header| -%>
+<%= "request.AddHeader(\"#{header[0]}\", \"#{header[1]}\")" %>
+  <% end -%>
+<% end -%>   
+request.AddHeader("Content-Type", "application/json")
+Dim response As IRestResponse = client.Execute(request)
+```
+
 ```java
 OkHttpClient client = new OkHttpClient();
 
@@ -57,7 +70,31 @@ Request request = new Request.Builder()
 Response response = client.newCall(request).execute();
 ```
 
-```javascript
+```javascript--browser
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  <%= "\"url\": \"#{@full_url}\"," %>
+  "method": "POST",
+  "headers": {
+    "Authorization": "Bearer <TOKEN>",
+<% if defined? extra_headers -%>
+  <% extra_headers.each do |header| -%>
+    <%= "\"#{header[0]}\", \"#{header[1]}\"," %>
+  <% end -%>
+<% end -%>        
+    "cache-control": "no-cache"
+  },
+  "processData": false,
+  "data": "<REQUEST BODY>"
+}
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+```
+
+```javascript--node
 var request = require("request");
 
 var options = { method: 'POST',

@@ -33,6 +33,18 @@ request.AddHeader("Authorization", "Bearer <TOKEN>");
 IRestResponse response = client.Execute(request);
 ```
 
+```vb
+<%= "Dim client = New RestClient(\"#{@full_url}\")" %>
+Dim request = New RestRequest(Method.[GET])
+<% if defined? extra_headers -%>
+  <% extra_headers.each do |header| -%>
+<%= "request.AddHeader(\"#{header[0]}\", \"#{header[1]}\")" %>
+  <% end -%>
+<% end -%> 
+request.AddHeader("Authorization", "Bearer <TOKEN>")
+Dim response As IRestResponse = client.Execute(request)
+```
+
 ```java
 OkHttpClient client = new OkHttpClient();
 
@@ -50,7 +62,29 @@ Request request = new Request.Builder()
 Response response = client.newCall(request).execute();
 ```
 
-```javascript
+```javascript--browser
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  <%= "\"url\": \"#{@full_url}\"," %>
+  "method": "GET",
+  "headers": {
+    "Authorization": "Bearer <TOKEN>",
+<% if defined? extra_headers -%>
+  <% extra_headers.each do |header| -%>
+    <%= "\"#{header[0]}\", \"#{header[1]}\"," %>
+  <% end -%>
+<% end -%>     
+    "cache-control": "no-cache"
+  }
+}
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+```
+
+```javascript--node
 var request = require("request");
 
 var options = { method: 'GET',
