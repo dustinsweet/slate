@@ -201,6 +201,66 @@ func main() {
   fmt.Println(string(body))
 }
 ```
+
+```swift
+import Foundation
+
+let headers = [
+<% if defined? extra_headers -%>
+  "Authorization": "Bearer <TOKEN>",
+  <% extra_headers.each do |header| -%>
+   <%= "\"#{header[0]}\": \"#{header[1]}\"," %>
+  <% end -%>    
+  "cache-control": "no-cache"
+<% else %>
+  "Authorization": "Bearer <TOKEN>",
+  "cache-control": "no-cache"
+<% end -%> 
+]
+
+let request = NSMutableURLRequest(
+  <%= "url: NSURL(string: \"#{@full_url}\")! as URL," %>
+  cachePolicy: .useProtocolCachePolicy,
+  timeoutInterval: 10.0)
+
+request.httpMethod = "GET"
+request.allHTTPHeaderFields = headers
+
+let session = URLSession.shared
+let dataTask = session.dataTask(
+  with: request as URLRequest, completionHandler: {
+    (data, response, error) -> Void in
+    if (error != nil) {
+      print(error)
+    } else {
+      let httpResponse = response as? HTTPURLResponse
+      print(httpResponse)
+    }
+  }
+)
+
+dataTask.resume()
+```
+
+```perl
+use REST::Client;
+ 
+my $client = REST::Client->new();
+
+$client->addHeader('Authorization', 'Bearer <TOKEN>');
+$client->addHeader('Accept', 'application/json');
+<% if defined? extra_headers -%>
+  <% extra_headers.each do |header| -%>
+<%= "$client->addHeader('#{header[0]}', '#{header[1]}');" %>
+  <% end -%>    
+<% end %>
+
+<%= "$url=\"#{@full_url}\";" %> 
+
+$client->GET($url);
+print $client->responseContent();
+print $client->responseHeader('ResponseHeader');
+```
 <% if defined?(response_body) %>
  > Response Format
 

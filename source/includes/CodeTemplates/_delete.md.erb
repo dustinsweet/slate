@@ -153,6 +153,50 @@ func main() {
   fmt.Println(string(body))
 }
 ```
+
+```swift
+import Foundation
+
+let headers = [
+  "Authorization": "Bearer <TOKEN>",
+  "cache-control": "no-cache"
+]
+
+let request = NSMutableURLRequest(
+  <%= "url: NSURL(string: \"#{@full_url}\")! as URL," %>
+  cachePolicy: .useProtocolCachePolicy,
+  timeoutInterval: 10.0)
+
+request.httpMethod = "DELETE"
+request.allHTTPHeaderFields = headers
+
+let session = URLSession.shared
+let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
+  if (error != nil) {
+    print(error)
+  } else {
+    let httpResponse = response as? HTTPURLResponse
+    print(httpResponse)
+  }
+})
+
+dataTask.resume()
+```
+
+```perl
+use REST::Client;
+ 
+my $client = REST::Client->new();
+
+$client->addHeader('Authorization', 'Bearer <TOKEN>');
+$client->addHeader('Accept', 'application/json');
+
+<%= "$url=\"#{@full_url}\";" %> 
+
+$client->DELETE($url);
+print $client->responseContent();
+print $client->responseHeader('ResponseHeader');
+```
 <% if defined?(response_body) %>
  > Response Format
 

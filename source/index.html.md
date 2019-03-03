@@ -9,7 +9,9 @@ language_tabs: # must be one of https://git.io/vQNgJ
   - php: PHP
   - ruby: Ruby
   - python: Python
+  - perl: Perl
   - go: Go
+  - swift: Swift
  
 toc_footers:
 
