@@ -147,6 +147,63 @@ func main() {
 
 }
 ```
+
+```swift
+import Foundation
+
+let headers = [
+  "Authorization": "Bearer <TOKEN>",
+  "Content-Type": "application/json",
+  "cache-control": "no-cache"
+]
+let parameters = <REQUEST BODY> as [String : Any]
+
+let postData = JSONSerialization.data(withJSONObject: parameters, options: [])
+
+let request = NSMutableURLRequest(
+  url: NSURL(string: "http://rest.tsheets.com/api/v1/<%= endpoint %>")! as URL,
+  cachePolicy: .useProtocolCachePolicy,
+  timeoutInterval: 10.0)
+
+request.httpMethod = "PUT"
+request.allHTTPHeaderFields = headers
+request.httpBody = postData as Data
+
+let session = URLSession.shared
+let dataTask = session.dataTask(
+  with: request as URLRequest,
+  completionHandler: {
+    (data, response, error) -> Void in
+    if (error != nil) {
+      print(error)
+    } else {
+      let httpResponse = response as? HTTPURLResponse
+      print(httpResponse)
+    }
+  }
+)
+
+dataTask.resume()
+```
+
+```perl
+use REST::Client;
+ 
+my $client = REST::Client->new();
+
+$client->addHeader('Authorization', 'Bearer <TOKEN>');
+$client->addHeader('Content-Type', 'application/json');
+$client->addHeader('charset', 'UTF-8');
+$client->addHeader('Accept', 'application/json');
+
+$req = '<REQUEST BODY>';
+
+$url="http://rest.tsheets.com/api/v1/<%= endpoint %>"; 
+
+$client->PUT($url, $req);
+print $client->responseContent();
+print $client->responseHeader('ResponseHeader');
+```
 <% if defined?(response_body) -%>
 > Response Format
 
