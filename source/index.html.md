@@ -4,8 +4,10 @@ title: TSheets API Reference
 language_tabs: # must be one of https://git.io/vQNgJ
   - shell: cURL
   - csharp: C#
+  - vb: VB.NET
   - java: Java
-  - javascript: NodeJS
+  - javascript--browser: AJAX  
+  - javascript--node: NodeJS
   - php: PHP
   - ruby: Ruby
   - python: Python
