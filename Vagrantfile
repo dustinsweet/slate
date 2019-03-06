@@ -2,6 +2,7 @@ Vagrant.configure(2) do |config|
   config.vm.box = "ubuntu/trusty64"
   config.vm.network :forwarded_port, guest: 4567, host: 4567
   config.vm.provider "virtualbox" do |vb|
+    vb.name = "slate_api_docs"
     vb.memory = "2048"
   end
 
@@ -13,7 +14,7 @@ Vagrant.configure(2) do |config|
       sudo apt-get install -yq ruby2.4 ruby2.4-dev
       sudo apt-get install -yq pkg-config build-essential nodejs git libxml2-dev libxslt-dev
       sudo apt-get autoremove -yq
-      gem2.4 install --no-ri --no-rdoc bundler
+      gem2.4 install --no-ri --no-rdoc bundler -v 1.17.3
     SHELL
 
   # add the local user git config to the vm
@@ -21,7 +22,7 @@ Vagrant.configure(2) do |config|
 
   config.vm.provision "install",
     type: "shell",
-    privileged: false,
+    privileged: true,
     inline: <<-SHELL
       echo "=============================================="
       echo "Installing app dependencies"
@@ -37,6 +38,7 @@ Vagrant.configure(2) do |config|
     inline: <<-SHELL
       echo "=============================================="
       echo "Starting up middleman at http://localhost:4567"
+      echo "The first page load might take a minute."
       echo "If it does not come up, check the ~/middleman.log file for any error messages"
       cd /vagrant
       bundle exec middleman server --watcher-force-polling --watcher-latency=1 &> ~/middleman.log &
