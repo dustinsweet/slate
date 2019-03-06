@@ -16,6 +16,7 @@ language_tabs: # must be one of https://git.io/vQNgJ
   - swift: Swift
  
 toc_footers:
+  - <a href="#changelog">Changelog</a>
 
 includes:
   - Overview/welcome.md.erb
@@ -23,7 +24,6 @@ includes:
   - Overview/request_formats.md.erb
   - Overview/tips_and_suggestions.md.erb
   - Overview/walkthroughs.md.erb  
-  - Overview/changelog.md.erb
 
   - APIReference/CurrentUser/current_user.md.erb
   - APIReference/CurrentUser/retrieve.md.erb
@@ -123,6 +123,8 @@ includes:
   - APIReference/Users/retrieve.md.erb
   - APIReference/Users/create.md.erb
   - APIReference/Users/update.md.erb
+
+  - Overview/changelog.md.erb  
 
 search: true
 ---
