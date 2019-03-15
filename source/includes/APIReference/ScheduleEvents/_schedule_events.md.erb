@@ -11,8 +11,8 @@
 | **start**<br/>read-write | _String_ | Date/time that represents the start time of this schedule event, in ISO 8601 format (`YYYY-MM-DDThh:mm:ss±hh:mm`) |
 | **end**<br/>read-write | _String_ | Date/time that represents the end time of this schedule event, in ISO 8601 format (`YYYY-MM-DDThh:mm:ss±hh:mm`) |
 | **all_day**<br/>read-write | _Boolean_ | If _true_, the event duration is all day on the day specified in start. If false, the event duration is determined by date/time specified in end. |
-| **user_id**<br/>read-only | _Int_ | Id of the user that this event belongs to. |
-| **unassigned**<br/>read-only | _Boolean_ | If _true_, this event is unassigned. If _false_, the event is assigned to the user specified in `user_id`. |
+| **user_id**<br/>read-only | _Int_ | Id of the user that this event belongs to.<br/><aside class="warning">This field is <i><b>deprecated</b></i> and will be removed from a future release. New applications should use <code>assigned_user_ids</code>.</aside> |
+| **unassigned**<br/>read-only | _Boolean_ | If _true_, this event is unassigned. If _false_, the event is assigned to the user specified in `user_id`.<br/><aside class="warning">This field is <i><b>deprecated</b></i> and will be removed from a future release. New applications should use <code>assigned_user_ids</code>.</aside> |
 | **assigned_user_ids**<br/>read-write | _Array_ | Ids of the user(s) assigned to this event. Empty array if the event is unassigned. Changing the assigned user IDs of an event may result in multiple event modifications. Check for a `201` status code and the supplemental data portion of the response for additional event modifications. |
 | **jobcode_id**<br/>read-write | _Int_ | Id of the [jobcode](#the-jobcode-object) associated with this event. |
 | **active**<br/>read-write | _Boolean_ | If _true_, the event is active. If _false_, the event has been deleted/archived. |
@@ -25,10 +25,6 @@
 | **customfields**<br/>read-write | _JSON Object_ | Only present if the Advanced Tracking Add-on is installed. This is a key / value map of [customfield ids](#the-custom-field-object) to the [customfield items](#the-custom-field-item-object) that are associated with the event. |
 | **last_modified**<br/>read-only | _String_ | Date/time when this schedule event was last modified, in ISO 8601 format (`YYYY-MM-DDThh:mm:ss±hh:mm`) |
 | **created**<br/>read-only | _String_ | Date/time when this schedule event was created, in ISO 8601 format (`YYYY-MM-DDThh:mm:ss±hh:mm`) |
-
- <aside class="warning">
- The following fields are <i><b>deprecated</b></i> and will be removed from a future release: <code>user_id</code> & <code>unassigned</code>.  New applications should use <code>assigned_user_ids</code>.
- </aside>
 
 ### Valid Schedule Event Colors
 

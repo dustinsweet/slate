@@ -21,15 +21,7 @@ _Pass an an object of filters as the value to a 'data' property (see example)._
 | **user_ids**<br/>optional | _Int_ | A comma-separated list of user ids. Only time for these users will be included. |
 | **group_ids**<br/>optional | _Int_ | A comma-seperated list of group ids. Only time for users from these groups will be included. |
 | **include_zero_time**<br/>optional | _String_ | 'yes' or 'no'. Default is 'no'. If 'yes', all users will be included in the output, even if they had zero hours for the time period. |
-| **advanced_overtime**<br/>(see notes below) | _String_ | 'yes' or 'no'. If 'yes', overtime will be formatted such that it includes the time for individual multipliers and can support more than just 1.5x (ot) and 2x (dt) overtime. |
-
-<aside class="notice">
-For <code>advanced_overtime</code> the default for api keys created before Oct 25th 2017 is 'no', however, the default for api keys created after this date is 'yes' and attempting to pass this parameter with a value of 'no' will result in an exception.
-</aside>
-
-<aside class="notice">
-The <code>advanced_overtime</code> setting is required to be passed as 'yes' if the Overtime add-on is installed and rates other than the standard 1.5x and 2x rates are defined. This is enforced so that incorrect overtime values that do not comply with the standard "total_ot_seconds" (1.5x) and "total_dt_seconds" (2x) rates are not missed.
-</aside>
+| **advanced_overtime**<br/>optional | _String_ | 'yes' or 'no'. If 'yes', overtime will be formatted such that it includes the time for individual multipliers and can support more than just 1.5x (ot) and 2x (dt) overtime.<br/><br/>_Note: For `advanced_overtime` the default for api keys created before Oct 25th 2017 is 'no', however, the default for api keys created after this date is 'yes' and attempting to pass this parameter with a value of 'no' will result in an exception._<br/><br/>_Note: The `advanced_overtime` setting is required to be passed as 'yes' if the Overtime add-on is installed and rates other than the standard 1.5x and 2x rates are defined. This is enforced so that incorrect overtime values that do not comply with the standard "total_ot_seconds" (1.5x) and "total_dt_seconds" (2x) rates are not missed._ |
 
 ### Understanding the Output
 
