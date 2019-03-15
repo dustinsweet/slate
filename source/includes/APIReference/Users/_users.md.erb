@@ -30,11 +30,11 @@ Following is a list of the properties that belong to a user object, and a descri
 | **profile_image_url**<br/>read-only | _String_ | Url identifier associated with this user's profile image. |
 | **mobile_number**<br/>read-write |  _String_ | Mobile phone number associated with this user. |
 | **pto_balances**<br/>read-only | _Object_ | List of jobcode identifiers and their respective PTO balances for this user (in seconds). Jobcode information for PTO Jobcodes will be supplied in `supplemental_data`. |
-| **submitted_to**<br/>read-write | _String_ | The latest date this user has submitted timesheets up to (`YYYY-MM-DD` format). _(See note below)_ |
-| **approved_to**<br/>read-write |  _String_ | The latest date this user has had timesheets approved to (`YYYY-MM-DD` format). _(See note below)_ |
+| **submitted_to**<br/>read-write | _String_ | The latest date this user has submitted timesheets up to (`YYYY-MM-DD` format).<br/><br/>_Note: requires the Approvals Add-On to be installed._<br/><br/>_Note: this property is **read-only** unless the account setting `approvals->settings->employee_approval = 1`. See [Effective Settings](#effective-settings) documentation for details._ |
+| **approved_to**<br/>read-write |  _String_ | The latest date this user has had timesheets approved to (`YYYY-MM-DD` format).<br/><br/>_Note: requires the Approvals Add-On to be installed._<br/><br/>_Note: When updating this value, if the value is greater than the `submitted_to` date for this user, both properties will be updated.  This is the equivalent of a manager/admin submitting time on a user's behalf._ |
 | **manager_of_group_ids**<br/>read-only | _Int[]_ | The group ids that this user manages. |
-| **require_password_change**<br/>read-write | _Boolean_ | If true, this user will be required to change their password on their next login. _(See note below)_ |
-| **password**<br/>write-only | _String_ | May only be set when editing the currently authenticated user (i.e. you may only edit your own password). _(See note below)_ |
+| **require_password_change**<br/>read-write | _Boolean_ | If true, this user will be required to change their password on their next login.<br/><aside class="warning">This property is <i><b>deprecated</b></i> for _Create_ and _Update_ operations.</aside> |
+| **password**<br/>write-only | _String_ | May only be set when editing the currently authenticated user (i.e. you may only edit your own password).<br/><aside class="warning">This property is <i><b>deprecated</b></i> for _Create_ and _Update_ operations.</aside> |
 | **login_pin**<br/>write-only | _Int_ | Used for logging into a Kiosk or similar. |
 | **pay_rate**<br/>read-only | _Float_ | The rate of pay associated with this user. Only visible to admins. |
 | **pay_interval**<br/>read-only | _String_ | The timeframe to which this user's pay rate applies, either 'hour' or 'year'. Only visible to admins. |
@@ -65,27 +65,9 @@ The rights assignable to an individual user. All properties are _read-write_, an
 | **view_group_schedules** | false | Able to view published events within the schedule for the groups that the user is a member of. |
 | **view_my_schedules** | false | Able to view published events within the schedule for themselves. |
 
- <aside class="notice">
-The <code>submitted_to</code> and <code>approved_to</code> properties require the <i>Approvals Add-On</i> to be installed.
-</aside>
-
- <aside class="notice">
-The <code>submitted_to</code> property is <i>read-only</i> unless the account setting <code>approvals->settings->employee_approval = 1</code>.  See <a href="#effective-settings">Effective Settings</a> documentation for details.
-</aside>
-
- <aside class="notice">
-When updating the <code>approved_to</code> date, if the value is greater than the <code>submitted_to</code> date for this user, both properties will be updated.  This is the equivalent of a manager/admin submitting time on a user's behalf.
-</aside>
-
- <aside class="notice">
+<aside class="notice">
 The following fields are considered <i>private</i> and are exposed only to managers and admins:
   <code>employee_number</code>, <code>salaried</code>, <code>exempt</code>, <code>username</code>, <code>payroll_id</code>, <code>hire_date</code>,
   <code>term_date</code>, <code>mobile_number</code>, <code>submitted_to</code>, <code>approved_to</code>, <code>permissions</code> & <code>customfields</code>
 </aside>
-
- <aside class="warning">
- The following fields are <i><b>deprecated</b></i> for User Create and Update operations:
- <code>require_password_change</code> & <code>password</code>.
- </aside>
-
 

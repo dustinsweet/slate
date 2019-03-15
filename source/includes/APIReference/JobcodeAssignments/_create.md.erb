@@ -13,7 +13,7 @@ _Pass an array of jobcode assignment objects as the value to a 'data' property (
 
 |                |             |             |
 | -------------: | :---------: | ----------- |
-| **user_id**<br/>required | _Int_ | User id for this jobcode assignment. _(See note below)_|
+| **user_id**<br/>required | _Int_ | User id for this jobcode assignment.<br/>_Note: Specify a `user_id` of 0 to indicate that this `jobcode_assignment` should apply to all users. This is equivalent to setting the `assigned_to_all` property to true on a jobcode object._ |
 | **jobcode_id**<br/>required | _Int_ | Jobcode id for this jobcode assignment. |
 
 ### Status Codes
@@ -26,10 +26,6 @@ Each jobcode assignment that is created will come back with a `_status_code` and
 
 <aside class="warning">
 To use this method, you must be a group manager of the user you're making assignments for, be an admin, or have the <code>manage_users</code> permission.
-</aside>
-
-<aside class="notice">
-Specify a <code>user_id</code> of <i>0</i> to indicate that this <code>jobcode_assignment</code> should apply to all users. This is equivalent to setting the <code>assigned_to_all</code> property to <i>true</i> on a jobcode object.
 </aside>
 
 <aside class="notice">
