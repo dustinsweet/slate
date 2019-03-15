@@ -28,3 +28,7 @@ _Pass an an object of filters as the value to a 'data' property (see example)._
 See explanation of response layouts to the right.
 
 Notice in the advanced overtime layout that the `total_ot_seconds` and `total_dt_seconds` values have been replaced by the `overtime_seconds` and `fixed_rate_seconds` objects in each instance. In the `overtime_seconds` object the key is the multiplier rate and the value is the number of seconds of overtime at that rate (i.e 14400 seconds at 1.5x). In the `fixed_rate_seconds` object, the key is the additional rate amount to add to the employee's hourly rate and the value is the time in seconds.
+
+<aside class="notice">
+The <code>payroll_id</code> value for each user can be found within the <code>supplemental_data</code> section of the response.  See example.
+</aside>
