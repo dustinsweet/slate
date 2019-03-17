@@ -193,6 +193,8 @@ EXIT /B %ERRORLEVEL%
 
   CALL :restore_head
 
+  echo Deployment Complete.
+
   EXIT /B 0
 
 
