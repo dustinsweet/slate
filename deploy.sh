@@ -21,7 +21,21 @@ Options:
 
 
 run_build() {
-  bundle exec middleman build --clean
+  # Start the container
+  docker run --name=apidocs -d tsheets:apidocs
+
+  # Copy the source files into the container
+  docker cp ${PWD}/source/. apidocs:/usr/src/app/source
+
+  # Execute the build
+  docker exec -w /usr/src/app/source apidocs bundle exec middleman build --clean --verbose
+
+  # Copy the build outputs from the container to a local directory
+  docker cp apidocs:/usr/src/app/build/. ${PWD}/build
+
+  # Stop the container and remove it
+  docker stop --time=0 apidocs
+  docker rm apidocs
 }
 
 parse_args() {
@@ -213,3 +227,5 @@ else
   run_build
   main "$@"
 fi
+
+echo Deployment Complete.
