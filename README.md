@@ -1,11 +1,12 @@
 TSheets-APIDocs
 =============
 <p align="center">
-    <img src="./source/images/logo.svg" width="150" alt="Logo"/>
+    <img src="./source/images/tsheetsbyqb37.svg" width="200" alt="Logo"/>
 </p>
 REST API Documentation for TSheets by QuickBooks
 
-**Support:** [Request Help](mailto:help@tsheets.com?subject=API Docs GitHub Help&cc=SBSEGTimeTrackingSegment-Partnerships@intuit.com)<br/>
+**Support:** [![Help](https://img.shields.io/badge/Support-TSheets%20Developer-blue.svg)](mailto:help@tsheets.com?subject=API Docs GitHub Help&cc=SBSEGTimeTrackingSegment-Partnerships@intuit.com)<br/>
+**Documentation:** [![User Guide](https://img.shields.io/badge/User%20Guide-SDK%20Docs-blue.svg)](https://developers.tsheets.com/docs/api/)<br/>
 **License:** [![Apache 2](http://img.shields.io/badge/license-Apache%202-brightgreen.svg)](http://www.apache.org/licenses/LICENSE-2.0) <br/>
 
 This Git Repository is the official reference to the REST API Documentation of TSheets (the Time Capture Segment of Intuit).
