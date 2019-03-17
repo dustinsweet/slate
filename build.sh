@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Query to see if the image already exists, and build it if it doesn't
 image=`docker images --filter "reference=tsheets" --format "{{.Repository}}"`
 
